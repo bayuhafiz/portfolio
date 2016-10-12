@@ -2,10 +2,7 @@ var app = angular.module('App', ['ui.materialize'])
     .controller('Ctrl', ["$scope", function($scope) {
         // something here
         $scope.texttyping = [
-            "A programmer is a person",
-            "who fixed a problem",
-            "that you dont know you have,",
-            "in a way you dont understand."
+            "\"A programmer is a person<br>who fixed a problem<br>that you dont know you have,<br>in a way you dont understand.\""
         ]
     }]);
 
@@ -27,7 +24,7 @@ app.directive('typedjs', function() {
                 contentType: "html",
                 showCursor: true,
                 cursorChar: "|",
-                backDelay: 1500,
+                backDelay: 4000,
                 startDelay: 2000,
                 loop: true
             };
